@@ -1,0 +1,187 @@
+section {
+	font-family:monospace,sans-serif;
+	min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.sectionHome{
+	display:flex;
+	align-items:center;
+	padding: 0 9%;
+
+	background: linear-gradient(to bottom,#000000,#000000, #081b29);
+
+}
+#nameDev{
+	color: rgba(1, 203, 196, 0.192);
+	
+
+	font-size: 6.5rem;
+	font-family: Montserrat, sans-serif;
+	
+	-webkit-text-stroke: 1.8px var(--segundoColor);
+	/*animation: name 3s linear infinite;*/
+	
+}
+
+
+#redesIco {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+.redIco {
+    transition: 0.5s;
+    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.642));
+    transform: scale(1);
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+.redIco:hover {
+    transform: scale(1.2);
+  }
+
+
+
+.sectionHomeContent h1{
+	font-family: Kanit ,sans-serif;
+    display: flex;
+    justify-content: center;
+	font-size: 5.6rem;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.sectionHomeContent .txtAnimate{
+    display: flex;
+    align-content: center;
+}
+#txtAnimate{
+    display: flex;
+    justify-content: center;
+}
+
+.sectionHomeContent .txtAnimate h2{
+	font-size: 3.5rem;
+	font-family: Tektur, sans-serif;
+	color: rgba(0, 169, 163, 0.505);
+	
+	
+	-webkit-text-stroke: 1.0px var(--segundoColor);
+}
+
+.sectionHomeContent p{
+	font-size: 1.6rem;
+	margin: 2rem 0 4rem;
+}
+
+.btnCVs{
+	display:flex;
+	justify-content:space-between;
+	position: relative; /* Asegura que z-index funcione correctamente */
+    z-index: 1; /* Puedes ajustar este valor según sea necesario */
+}
+
+.btnCVs .btnCV{
+    transition: 0.5s;
+    background-color:transparent;
+	text-transform: uppercase;
+    
+	cursor: pointer;
+	padding: 10px 42px;
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	position:relative;
+    border: solid var(--segundoColor) 2px;
+	border-radius: 18px;
+    text-decoration: none;
+}
+.btnCV:hover{
+    border: solid var(--colorWhite) 2px;
+	
+    
+}
+
+.btnCV::before{
+	content:"";
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg,
+	rgba(78, 240, 255, 0.618), var(--opcColor2), var(--opcColor), var(--opcColor2),
+	rgba(78, 240, 255, 0.76), var(--opcColor2),var(--opcColor), var(--opcColor2));
+	background-size: 800%;
+	border-radius: 10px;
+	filter:blur(7px);
+	animation: glowing 30s linear infinite;
+}
+@keyframes glowing {
+	0%{
+	background-position: 100% 0;
+	}
+	50%{
+	background-position: 400% 0;
+	}
+	100%{
+	background-position: 0 0;
+	}
+}
+
+/*@keyframes name {
+
+	50% {
+		transform: scale(1.04);
+		-webkit-text-stroke: 2.2px var(--segundoColor);
+	 }
+
+}*/ /*Animacion TituloName*/
+
+
+
+@media (max-width:598px){
+	.btnCVs .btnCV{
+		padding: 12px 15px;
+		font-size: 18px;
+
+	}
+}
+/*Ajustar txt nombre y sw dev*/
+@media (max-width:920px){
+	#nameDev{
+		font-size: 3.6rem;
+
+	}
+	#txtAnimate h2{
+		font-size: 1.9rem;
+	}
+
+}
+/*Ajustar el tamaño de los btnCV*/
+@media (max-width:432px){
+	.btnCVs .btnCV{
+		padding: 8px 12px;
+		font-size: 12px;
+	}
+}
+/*Ajustar txt nombre y sw dev*/
+@media (max-width:575px){
+	#nameDev{
+		font-size: 2.8rem;
+	}
+}
+@media (max-width:395px){
+	#nameDev{
+		font-size: 2.3rem;
+	}
+}
+
+
+  

@@ -1,0 +1,48 @@
+.imgTecProyecto{
+    filter: grayscale(5);
+    transition: 0.2s;
+}
+.imgTecProyecto:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 2px #000000);
+    
+}
+.cardProy {
+    background: linear-gradient(45deg, rgba(10, 44, 62, 0.5), rgba(0, 77, 102, 0.7));
+    backdrop-filter: blur(20px) hue-rotate(45deg); /*Efecto de glass, hace borrosas las letras... quitar posiblemente*/
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 20px;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-origin: center;
+    transition: 1s;
+}
+
+.cardProy:hover {
+    z-index: 1;
+    transition: 1s;
+    transform: scale(1.2);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5), 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+#imgLogoProyecto{
+    transition: 1s;
+}
+#imgLogoProyecto:hover{
+    transition: 1s;
+    transform: perspective(500px) rotateY(25deg);
+    
+}
+
+.cardBg{
+    background: #051019;
+  }
+
+
+
+/* --------------------------------  */
+
+
+
+

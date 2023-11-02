@@ -1,0 +1,160 @@
+.card{
+    margin: 2%;
+    border-radius: 12px;
+}
+
+.imgCardSuperior{
+    width: 15%;
+    /*ajustar tamaño de las img para no romper las cards*/
+    height: 100px; 
+    object-fit: contain;
+}
+.imgCardInf{
+  
+      /*ajustar tamaño de las img para no romper las cards*/
+      height: 150px; 
+      object-fit: contain;
+}
+#labelSuperior{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#cardsCursos{
+    background: #051019;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+#cardsSuperior{
+    background: #051019;
+}
+#cardCurso{
+  background: linear-gradient(45deg, rgba(10, 44, 62, 0.5), rgba(0, 77, 102, 0.7));
+  backdrop-filter: blur(20px) hue-rotate(45deg);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 20px;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-origin: center;
+  transition: 1s;
+}
+#cardZoom{
+  transition: transform 0.3s ease;
+  
+}
+#cardZoom:hover{
+  transform: scale(1.1);
+  
+
+}
+#imgLogoCurso{
+  transition: 0.4s;
+}
+#imgLogoCurso:hover{
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 5px rgba(239, 247, 0, 0.8));
+  transition: 0.4s;
+  
+}
+#cardCarrera{
+  background: linear-gradient(45deg, rgba(5, 16, 25, 0.505), rgba(3, 236, 255, 0.505));
+  backdrop-filter: hue-rotate(85deg);
+  border: none;
+  
+  color: #fff;
+
+  transition: 1s;
+}
+
+/*rgba(0, 169, 163, 0.505);*/
+
+
+
+
+@media (max-width:1199px){
+	.imgCardInf{
+        width: 60%;
+	}
+}
+
+@media (max-width: 1199px) {
+    .row {
+      justify-content: center; /* Centra las columnas en la fila */
+    }
+  
+    .imgCardInf {
+      text-align: center; /* Centra la imagen */
+    }
+  
+    .card-text, .card-title, .btn {
+      text-align: center; /* Centra el texto y los botones */
+    }
+  }
+
+  /*lugar y tamaños de botones de las cards cursos*/
+ 
+  @media(max-width: 993px){
+    .btnCur1 {
+        margin-left: 20%;
+        margin-bottom: 10px;
+      }
+
+      .btnCur2 {
+        margin-left: 20%;
+        margin-bottom: 10px;
+        padding: 4px 21px;
+      }
+
+  }
+  @media(max-width: 380px){
+    .btnCur1 {
+        margin-left: 10%;
+      }
+
+      .btnCur2 {
+        margin-left: 10%;
+      }
+  }
+  
+
+
+  @media(max-width: 993px){
+    #cardZoom{
+      transition: none;
+    }
+    #cardZoom:hover{
+      transform: none;
+      filter: none;
+    }
+
+  }
+/*adaptando la los txt de las cards para que no se rompan*/
+@media(max-width:1200px){
+  .card-title{
+    height: 35px; 
+    object-fit: contain;
+  }
+}
+/*adaptando la los txt de las cards cursos para que no se rompan*/
+@media(max-width:1400px){
+  .txtDescripCardCurso{
+    padding-top: 4px;
+    height: 85px; 
+    object-fit: contain;
+  }
+}
+@media(max-width:1199px){
+  .txtDescripCardCurso{
+    padding-top: 8px;
+    height: 125px; 
+    object-fit: contain;
+  }
+}
+@media(max-width:991px){
+  .txtDescripCardCurso{
+    height: 155px; 
+    object-fit: contain;
+  }
+}

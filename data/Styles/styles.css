@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --colorSecundario: #20c997;
+    --colorWhite:#FFFFFF;
+
+    --opcColor:rgb(3, 236, 255);
+    --opcColor2:rgb(78, 240, 255);
+    --fondoColor: #081b29;
+    --primerColor: #112e42;
+    --textoColor: #ededed;
+    --segundoColor: #00abf0;
+
+}
+
+
+
+html{font-size: 70%;overflow-x:hidden;}
+body{background-color: var(--fondoColor); color: var(--textoColor);}
+h2{color: var(--textoColor);}
+
+#navMenu{
+    background-color: rgba(5, 16, 25, 0.8);
+}
+
+.nav-item a{
+	font-size: 1.8rem;
+
+	font-weight: 500;
+	margin-left: 3.5rem;
+	transition: 0.3s;
+}
+
+.nav-item a:hover{
+	color:var(--segundoColor);
+}
+
+#devIco{
+    font-size:2.5rem;
+	font-weight: 600;
+}
+.fontNav{
+    font-family:monospace,sans-serif;
+}
+
+.iconNav{
+	/*background-color:black;*/
+	height:60px;
+	width:60px;
+	border-radius:8px;
+	display:flex;
+	flex-direction:column;
+	gap:8px;
+	justify-content:center;
+	align-items:center;
+}
+
+.line{
+	background-color:var(--colorWhite);
+	height:4px;
+	width:38px;
+	border-radius:3px;
+	transition:0.5s;
+}
+
+.active .line:nth-child(1){
+    transform: translateY(10px)
+    rotate(135deg);
+    background-color:rgb(255, 222, 222);
+    border: solid rgb(255, 20, 20) 1.2px;
+}
+    
+.active .line:nth-child(2){
+    transform:scale(0);
+    
+}
+.active .line:nth-child(3){
+    transform: translateY(-14px)
+    rotate(-135deg);
+    background-color:rgb(230, 186, 255);
+    border: solid rgb(162, 1, 255) 1.2px;
+    /* Sable azul ObiWan
+    background-color:rgb(173, 207, 255);
+    border: solid rgb(58, 139, 252) 1.2px;*/
+}
+
+/*Style section home*/
+
+

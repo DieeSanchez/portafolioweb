@@ -1,0 +1,90 @@
+  #rowSkill{
+    background: #051019;
+  }
+
+  /*Modifica tambien el label de proyectos ya que es el mismo*/
+  #labelSkill {
+    padding: 10px;
+  }
+  
+  #labelSkill h2 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+  }
+  #labelSkill{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .skillCard {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .skillCard:hover {
+    transform: scale(1.5);
+    z-index: 1;
+  }
+  
+  .skillCard:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #000000, #00ffea);
+    opacity: 0.5;
+    border-radius: 50%;
+  }
+  
+  .img-container {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rotate {
+    animation: resp 4s linear infinite;
+  }
+  
+  .skillImg {
+    width: 100%;
+    height: auto;
+    max-width: 80px;
+    object-fit: cover;
+  }
+  
+  @keyframes resp {
+    50% {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 8px #000000);
+    }
+
+  }
+  @media(max-width: 993px){
+    #skillImg:hover{
+      filter: drop-shadow(0 0 5px #FFA500);
+      }
+    .skillCard:hover {
+        transform: none;
+    }
+    #skillImg{
+      filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+    }
+
+  }
